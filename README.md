@@ -2,6 +2,8 @@
 
 The official code for the AAAI 2024 paper "[Big Learning Expectation Maximization](https://arxiv.org/abs/2312.11926)" by Yulai Cong and Sijia Li.
 
+![converge_wrt_seed](https://github.com/YulaiCong/Big-Learning-Expectation-Maximization/assets/34753772/bae13ef1-a6be-4ac3-93b0-194951ecfb61)
+
 ## Abstract
 Mixture models serve as one fundamental tool with versatile applications. However, their training techniques, like the popular Expectation Maximization (EM) algorithm, are notoriously sensitive to parameter initialization and often suffer from bad local optima that could be arbitrarily worse than the optimal. To address the long-lasting bad-local-optima challenge, we draw inspiration from the recent ground-breaking foundation models and propose to leverage their underlying big learning principle to upgrade the EM. Specifically, we present the Big Learning EM (BigLearn-EM), an EM upgrade that simultaneously performs joint, marginal, and orthogonally transformed marginal matchings between data and model distributions. Through simulated experiments, we empirically show that the BigLearn-EM is capable of delivering the optimal with high probability; comparisons on benchmark clustering datasets further demonstrate its effectiveness and advantages over existing techniques.
 
@@ -24,7 +26,6 @@ filetree
 
 ### 1. Joint-EM vs BigLearn-EM on the 25-GMM simulation
 - Run `main_biglearnEM_vs_EM_v1.ipynb`
-![converge_wrt_seed](https://github.com/YulaiCong/Big-Learning-Expectation-Maximization/assets/34753772/bae13ef1-a6be-4ac3-93b0-194951ecfb61)
 
 ### 2. Real-World Clustering Experiments
 - Prepare the dataset: The Glass, Letter, Pendigits, and Vehicle datasets are given in the Directory 'dataset'. [Click here to download other datasets](https://www.csie.ntu.edu.tw/~cjlin/libsvm/index.html)
